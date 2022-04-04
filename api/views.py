@@ -1,3 +1,4 @@
+from django.core.exceptions import ObjectDoesNotExist
 from django.utils import timezone
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import status
@@ -6,7 +7,7 @@ from rest_framework.mixins import (CreateModelMixin, DestroyModelMixin,
                                    ListModelMixin, RetrieveModelMixin,
                                    UpdateModelMixin)
 from rest_framework.response import Response
-from django.core.exceptions import ObjectDoesNotExist
+
 from .models import Client, MailingList, Message
 from .scheduler import get_job, pause_job, remove_job, resume_job
 from .sendler import send_message

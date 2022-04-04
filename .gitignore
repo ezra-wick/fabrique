@@ -2,7 +2,8 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+static/admin
+admin
 # C extensions
 *.so
 
@@ -70,7 +71,7 @@ instance/
 
 # Sphinx documentation
 docs/_build/
-
+static/admin/
 # PyBuilder
 target/
 
@@ -109,6 +110,11 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.venv_tg
+venv_tg/
+venv_tg.bak/
+
+
 
 # Spyder project settings
 .spyderproject

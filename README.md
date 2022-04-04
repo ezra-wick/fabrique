@@ -43,3 +43,12 @@ docker-compose down
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 ```
+
+### Документация по API
+
+Перейдите <a href="http://127.0.0.1:8000/api/docs" target="_blank">http://127.0.0.1:8000/api/docs</a>
+
+You will see the automatic interactive API documentation (provided by <a href="https://github.com/swagger-api/swagger-ui" target="_blank">Swagger UI</a>):
+
+
+![Swagger UI](docs/docs/img/index-swagger-ui.png)
